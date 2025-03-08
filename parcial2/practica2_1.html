@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practica 2.1</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		h1{
+			font-family: 'Bubblegum Sans', cursive;
+      		padding: 40px;
+      		text-align: center;
+		}
+		h2{
+			text-align: right;
+		}
+		h3{
+			text-align: center;
+		}
+		body{
+			background-image: url("descargafondo.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		fieldset{
+			text-align: center;
+		}
+		fieldset:last-of-type {
+            margin-top: 20px; /* Ajusta este valor según necesites */
+        }
+	</style>
+
+</head>
+<body>
+	<h1>Volkswagen Potosina</h1>
+	<h3>Compras online</h3>
+
+	<fieldset>
+		<legend>Información general del cliente</legend>
+
+		<!--&nbsp; para un tap/tabulacion-->
+
+		<label for="nombre">Nombre:</label>
+		<input type="text" name="nombre" id="nombre" size="25" maxlength="15" title="Nombre">
+
+		
+		<label for="apellidopaterno">Apellido paterno:</label>
+		<input type="text" name="apellidopaterno" id="apellidopaterno" size="25" maxlength="15" title="Apellido paterno">
+
+		
+		<label for="apellidopaterno">Apellido materno:</label>
+		<input type="text" name="apellidomaterno" id="apellidomaterno" size="25" maxlength="15" title="Apellido materno"><br><br><br>
+
+		
+		<label for="nombreusuario">Nombre de usuario:</label>
+		<input type="text" name="nombreusuario" id="nombreusuario" size="25" title="Usuario">
+
+
+		<label for="contraseña">Password:</label>
+		<input type="password" name="contraseña" id="contraseña" title="Password">
+
+		<label for="fecharegistro">Fecha de registro: </label>
+		<input type="date" name="fecharegistro" id="fecharegistro">
+
+	</fieldset>
+
+	<fieldset>
+		<legend>Datos para facturar</legend>
+
+		<label for="pais">País:</label>
+		<select size="3">
+  			<option value="mexico">México</option>
+  			<option value="canada">Canadá</option>
+  			<option value="reino-unido">Reino Unido</option>
+		</select>
+
+		<label for="ciudad">Ciudad:</label>
+		<select size="3">
+  			<option value="SLP">San Luis Potosi</option>
+  			<option value="Monterrey">Monterrey</option>
+  			<option value="cd-valles">Cd. Valles</option>
+		</select>
+
+		<label for="calle">Calle:</label>
+		<input type="text" name="calle" id="calle" size="25" title="Calle"><br><br>
+
+		<label for="numero">Número de casa: </label>
+		<input type="number" name="numero" id="numero" title="Número exterior">
+
+		<label for="colonia">Colonia:</label>
+		<input type="text" name="colonia" id="colonia" title="Colonia">
+
+		<label for="correo">E-mail</label>
+		<input type="email" name="correo" id="correo" title="E-mail:"><br><br>
+
+		<label for="rfc">R.F.C:</label>
+		<input type="text" name="rfc" id="rfc" title="R.F.C">
+
+		<label for="cp">C.P:</label>
+		<input type="text" name="cp" id="cp" title="Código postal">
+
+		<input type="checkbox" name="acepto" id="acepto" value="1">
+		<label for="acepto">Acepto términos y condiciones</label><br>
+
+		<input type="submit" name="enviar" id="enviar">
+
+		<input type="reset" name="borrar" id="borrar" value="Borrar datos">
+	</fieldset>
+
+	<h2>Febrero 2025, SLP</h2>
+
+</body>
+</html>

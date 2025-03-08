@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Práctica 3</title>
+    <style>
+        /* Estilo para los iframes dentro de la tabla */
+        iframe {
+            border: none;
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+        img {
+            width: 250px;
+            height: 250px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>P R A C T I C A 3</h1>
+
+    <!-- Tabla con imágenes -->
+    <table>
+        <tr>
+            <td><a href="ternurin1.png" target="imagenFrame"><img src="ternurin1.png" alt="Ternurin 1"></a></td>
+            <td><a href="ternurin2.png" target="imagenFrame"><img src="ternurin2.png" alt="Ternurin 2"></a></td>
+            <td><a href="ternurin3.png" target="imagenFrame"><img src="ternurin3.png" alt="Ternurin 3"></a></td>
+            <td><a href="ternurin4.png" target="imagenFrame"><img src="ternurin4.png" alt="Ternurin 4"></a></td>
+        </tr>
+    </table>
+
+    <!-- iframe donde se mostrará la imagen seleccionada -->
+    <iframe name="imagenFrame" width="75%" height="250px"></iframe>
+
+</body>
+</html>
