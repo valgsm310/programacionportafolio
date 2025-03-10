@@ -1,0 +1,29 @@
+ul{
+	list-style-type: none;
+	padding: 16px;
+	margin: 12px;/*respecto a los elemntos que estan al rededor en este caso*/
+	width: 20%;
+	margin: 0px;
+	padding: 0px;
+}
+
+li a{
+	background-color: #a2daa9;
+	color: white;
+	display: block;
+	padding: 16px;
+	text-decoration: none;
+}
+
+li a:hover{
+	background-color: #6aa571;
+	color: white;
+	display: block;
+	padding: 16px;
+	text-decoration: none;
+}
+
+li .activo{
+	background-color: #356d3b;
+	color: white;
+}
