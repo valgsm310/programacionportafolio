@@ -1,0 +1,63 @@
+.capa1{
+	margin-left: 25%;
+	padding: 12px;
+
+}
+
+ul{
+	list-style-type: none;
+	width: 20%;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	background-color: #a2daa9;
+	position: fixed;
+}
+
+li a{
+	background-color: #a2daa9;
+	color: white;
+	display: block;
+	padding: 16px;
+	text-decoration: none;
+}
+
+li a:hover{
+	background-color: #6aa571;
+	color: white;
+	display: block;
+	padding: 16px;
+	text-decoration: none;
+}
+
+li .activo{
+	background-color: #356d3b;
+	color: white;
+}
+
+h1{
+	font-family: "Playwrite HU", cursive;
+}
+h2{
+	font-family: "Indie Flower", cursive;
+}
+
+@font-face{
+	font-family: "fuente1";
+	src: url("Josefin_Sans/JosefinSans-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: "fuente2";
+	src: url("Emblema_One/EmblemaOne-Regular.ttf") format("truetype");
+}
+
+p{
+	font-family: "fuente1";
+	font-size: 18px;
+}
+
+.t2{
+	font-family: "fuente2";
+	font-size: 14px;
+}
