@@ -1,0 +1,45 @@
+*{ /* * ES EL SELECTOR UNIVERSAL*/
+	margin: 0;
+	padding: 0;
+}
+
+.contenedor{
+	display: flex;
+	flex-direction: column;/*flex-direction para acomodarse*/
+	min-height: 100vh;/*vh medida indica el 100% de nuestra ventana medida relativa - adaptar*/
+}
+
+.encabezado{
+	background: gray;
+	color: white;
+	padding: 25px;
+	/*margin: 5px;*/
+	text-align: center;
+}
+
+.contenido{
+	display: flex;
+	flex-direction: space-between;
+	flex: 1;
+}
+
+.texto1{
+	padding: 15px;
+	margin: 10px;
+	border: 1px solid purple;
+	box-shadow: 5px 5px rgba(100, 50, 120, 0.5);
+	display: flex;
+	flex: 1;
+}
+
+.pie{
+	padding: 10px;
+	border: 1px lightgray;
+	background: gray;
+}
+
+@media(max-width:500px){
+	.contenido{
+		flex-direction: column;
+	}
+}
