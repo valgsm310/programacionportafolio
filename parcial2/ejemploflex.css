@@ -10,6 +10,8 @@
 }
 
 .encabezado{
+	font-family: "Indie Flower", cursive;
+	font-size: 30px;
 	background: gray;
 	color: white;
 	padding: 25px;
