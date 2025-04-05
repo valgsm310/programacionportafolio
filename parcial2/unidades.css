@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/*unidades absolutas*/
+.box {
+  background-color: #fff;
+  padding: 10px;
+  border: 2px solid #ccc;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.px {
+  width: 200px;
+  height: 100px;
+  font-size: 14px;
+  background-color: #c5e797;
+}
+
+.pt {
+  width: 150pt;
+  height: 75pt;
+  font-size: 12pt;
+  background-color: #93e6f0;
+}
+
+.cm {
+  width: 10cm;
+  height: 5cm;
+  font-size: 1cm;
+  background-color: #f093e9;
+}
+
+.mm {
+  width: 100mm;
+  height: 50mm;
+  font-size: 10mm;
+  background-color: #e07575; 
+  margin: 0;
+}
+
+.in {
+  width: 6in;
+  height: 3in;
+  font-size: 0.5in;
+  background-color: #a793f0;
+}
+
+.pc {
+  width: 5pc;
+  height: 3pc;
+  font-size: 0.5pc;
+  background-color: #f0e893;
+}
+
+
+
+/*unidades relativas*/
+.em {
+  width: 20em; 
+  height: 10em;
+  font-size: 2em;
+  background-color: #c6f19f;
+}
+
+.rem {
+  width: 15rem; 
+  height: 8rem;
+  font-size: 1.5rem;
+  background-color: #9ff1e2;
+}
+
+.percentage {
+  width: 50%; 
+  height: 25%;
+  font-size: 2vw; 
+  background-color: #9fbaf1;
+}
+
+.vw {
+  width: 50vw; 
+  height: 30vh; 
+  font-size: 2vw;
+  background-color: #c69ff1;
+}
+
+.vh {
+  width: 30vw; 
+  height: 60vh;
+  font-size: 1.5vh; 
+  background-color: #f19fea;
+}
+
+.vmin {
+  width: 40vmin; 
+  height: 20vmin;
+  font-size: 1.5vmin;
+  background-color: #f19fa8;
+}
+
+.vmax {
+  width: 40vmax; 
+  height: 20vmax;
+  font-size: 1.5vmax; 
+  background-color: #f1dc9f;
+}
