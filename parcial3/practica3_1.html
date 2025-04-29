@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Operaciones con JavaScript</title>
+	<script type="text/javascript" src="operaciones.js"></script>
+	<link rel="stylesheet" type="text/css" href="operaciones.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Indie+Flower&family=Permanent+Marker&family=Single+Day&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<h1>Operaciones</h1>
+	<form>
+		<label for="num1">Escribe un número</label><br>
+		<input type="text" name="num1" id="num1" placeholder="Escribe un numero"><br>
+
+		<label for="num2">Escribe un número</label><br>
+		<input type="text" name="num2" id="num2" placeholder="Escribe un numero"><br>
+
+		<input type="button" name="suma" id="suma" value="suma" onclick="sumar()">
+		<input type="button" name="resta" id="resta" value="resta" onclick="restar()">
+		<input type="button" name="multi" id="multi" value="multi" onclick="multiplicar()">
+		<input type="button" name="divide" id="divide" value="divide" onclick="dividir()">
+	</form>
+
+	<!--El resultado es:
+	<p id="r"></p>-->
+
+	<p id="r">El resultado es:
+    <span id="texto-resultado"></span>
+   	</p>
+
+</body>
+</html>
