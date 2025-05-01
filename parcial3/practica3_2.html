@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Obtener datos de formulario con Javascript</title>
+	<script type="text/javascript" src="leerform.js"></script>
+	<link rel="stylesheet" type="text/css" href="leerform.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Indie+Flower&family=Permanent+Marker&family=Single+Day&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Registo de usuario</h1>
+	<form name="formulario">
+		<label for="user">Usuario:</label>
+		<input type="text" name="user" id="user"><br>
+		<label for="user">Password</label>
+		<input type="password" name="pass" id="pass"><br>
+		<select name="carrera" id="carrera">
+			<option value="ITI">Ing. Tecnologias de la Información</option>
+			<option value="ITEM">Ing. Telemática</option>
+		</select><br>
+		<label for="genero">Género</label><br>
+		<input type="radio" name="genero" id="genero" value="f">Femenino<br>
+		<input type="radio" name="genero" id="genero" value="m">Masculino<br>
+		<input type="checkbox" name="casilla" id="casilla">
+		<label for="casilla">Acepto los términos y condiciones de uso</label><br>
+		<input type="button" name="envio" id="envio" value="Leer datos" onclick="leer()">
+		
+	</form>
+
+	<div id="resultado"></div>
+
+</body>
+</html>

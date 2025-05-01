@@ -1,0 +1,99 @@
+body {
+    font-family: sans-serif;
+    background-image: url(imagenes/fondoternurin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /*ponerse en toda la pantalla*/
+    background-position: center center; /* centrar imagen en el fondo */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centra elementos horizontalmente */
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+
+    font-family: "Alfa Slab One", serif;
+    color: white;
+}
+
+form {
+    background-color: #fef0f2;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    box-sizing: border-box;
+}
+
+label {
+    font-family: "Single Day", cursive;
+
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="password"],select{
+    font-family: "Single Day", cursive;
+    width: calc(100% - 12px); /* Ancho completo menos el padding */
+    padding: 10px; /* Espacio interior para los campos de entrada */
+    margin-bottom: 15px; /* Espacio debajo de los campos de entrada */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados suaves */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+    font-size: 1em; /* Tamaño de fuente normal */
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px; /* Espacio a la derecha de los radio buttons y checkboxes */
+}
+
+input[type="button"] {
+    font-family: "Indie Flower", cursive;
+
+    background-color: #f19faa;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+input[type="button"]:hover {
+    background-color: white;
+    color: #f19faa;
+}
+
+#resultado {
+    background-color: #fef0f2;
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+
+    /*background-color: #f9f9f9;*/
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    padding: 15px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05); 
+    width: 600px; 
+    box-sizing: border-box; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
