@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico sobre Snoopy</title>
+    <link rel="stylesheet" href="snoopy.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Single+Day&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <h1>¿Cuánto sabes de Snoopy?</h1>
+    <form id="formulario-snoopy">
+        <div class="pregunta">
+            <label for="pregunta1">1. ¿Cuál es la raza de perro de Snoopy?</label>
+            <select id="pregunta1" name="pregunta1">
+                <option value="">Selecciona una opción</option>
+                <option value="beagle">Beagle</option>
+                <option value="pastor-aleman">Pastor Alemán</option>
+                <option value="labrador">Labrador</option>
+            </select>
+        </div>
+
+        <div class="pregunta">
+            <label for="pregunta2">2. ¿Cómo se llama el mejor amigo pájaro de Snoopy?</label>
+            <select id="pregunta2" name="pregunta2">
+                <option value="">Selecciona una opción</option>
+                <option value="woodys">Woodys</option>
+                <option value="pajaro">pajaro amarillo</option>
+                <option value="woodstock">Woodstock</option>
+            </select>
+        </div>
+
+        <div class="pregunta">
+            <label for="pregunta3">3. ¿En qué casa imaginaria vive Snoopy?</label>
+            <select id="pregunta3" name="pregunta3">
+                <option value="">Selecciona una opción</option>
+                <option value="casa-de-perro">Casa de perro roja</option>
+                <option value="arbol">Casa en un árbol</option>
+                <option value="nube">Nube</option>
+            </select>
+        </div>
+
+        <div class="pregunta">
+            <label for="pregunta4">4. ¿Cuál es la profesión (en su imaginación) más famosa de Snoopy?</label>
+            <select id="pregunta4" name="pregunta4">
+                <option value="">Selecciona una opción</option>
+                <option value="piloto">piloto</option>
+                <option value="as de la aviación">as de la aviación</option>
+                <option value="jugador">jugador de fut bol americano</option>
+            </select>
+        </div>
+
+        <button type="button" onclick="evaluarRespuestas()">Evaluar Respuestas</button>
+    </form>
+
+    <div id="resultado" class="oculto">
+        <h2>Tu Calificación: <span id="calificacion"></span> / 4</h2>
+    </div>
+
+    <div id="grafico" class="oculto">
+        <h2>Puntos por Pregunta</h2>
+        <canvas id="miGrafico"></canvas>
+    </div>
+
+    <button id="descargar-pdf" class="oculto">Descargar PDF</button>
+
+    <script src="snoopy.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

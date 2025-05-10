@@ -1,0 +1,76 @@
+body {
+    /*font-family: sans-serif;*/
+    background-image: url("snoopy.jpg");
+    background-repeat: no-repeat;
+     background-size: cover; 
+    background-position: center center; 
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    font-family: "Indie Flower", cursive;
+    color: #f78998; /* Un toque de rojo Snoopy */
+    text-align: center;
+}
+
+.pregunta {
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-family: "Indie Flower", cursive;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], select {
+    font-family: "Single Day", cursive;
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #cbd5fc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #bbc5ee;
+}
+
+#resultado, #grafico, #descargar-pdf {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e3e9ff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.oculto {
+    display: none;
+}
+
+#calificacion {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #28a745;
+}
