@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <link rel="stylesheet" type="text/css" href="estiloz.css">
 
   <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>-->
   <script type="text/javascript" src="script.js"></script>
@@ -29,7 +29,7 @@
 
         <div class="container-user">
           <i class="fa-solid fa-user"></i>
-          <i class="fa-solid fa-basket-shopping"></i>
+          <a href="Cuestionario.html"><i class="fa-solid fa-basket-shopping"></i></a>
           <div class="container-shopping-cart">
             <span class="text">Carrito</span>
             <span class="number">(0)</span>
@@ -65,39 +65,22 @@
 
 <!--INICIO de cuestionario-->
 
-  <h2>Formulario de Compra - Bazar Olivo</h2>
+  <h2>Formulario de Facturación</h2>
+  <form id="formulario">
+    <label for="nombre">Nombre del cliente:</label>
+    <input type="text" id="nombre" required>
 
-  <form id="formularioVenta">
-    <label>Nombre del cliente:
-      <input type="text" id="nombre" required>
-    </label>
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" required>
 
-    <label>Correo electrónico:
-      <input type="email" id="email" required>
-    </label>
+    <h3>Productos por Categoría</h3>
+    <div id="productos-container"></div>
 
-    <div class="producto">
-      <label>Playeras ($150 c/u):</label>
-      <input type="number" id="cant1" min="0" value="0">
-    </div>
-
-    <div class="producto">
-      <label>Tazas ($80 c/u):</label>
-      <input type="number" id="cant2" min="0" value="0">
-    </div>
-
-    <div class="producto">
-      <label>Libretas ($50 c/u):</label>
-      <input type="number" id="cant3" min="0" value="0">
-    </div>
-
-    <div class="resultado" id="total"></div>
-
-    <button type="button" onclick="calcularTotal()">Calcular Total</button>
+    <p><strong>Total: $<span id="total">0</span></strong></p>
     <button type="button" onclick="generarPDF()">Generar Comprobante PDF</button>
   </form>
 
-  <script src="script.js"></script>
+  <!--fIN de cuestionario-->
 
   <!--INICIO footer-->
   <footer class="footer">
@@ -124,4 +107,6 @@
 <!--FIN footer-->
 
 </body>
+
+<script src="https://kit.fontawesome.com/93eccfeecd.js" crossorigin="anonymous"></script>
 </html>
