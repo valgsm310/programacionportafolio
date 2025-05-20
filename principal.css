@@ -1,0 +1,138 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f0fff0; /* Un verde muy claro de fondo (casi blanco) */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    color: #8bc34a; /* Verde principal para títulos */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px #c8e6c9; /* Sombra suave verde */
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #689f38; /* Otro tono de verde para subtítulos */
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-bottom: 2px dashed #c8e6c9; /* Línea punteada suave verde */
+    padding-bottom: 5px;
+    font-size: 1.8em;
+}
+
+h3 {
+    color: #558b2f; /* Tono más oscuro para subsecciones */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+p {
+    color: #555;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+hr {
+    border: 0;
+    background-color: #c8e6c9; /* Verde suave para la línea horizontal */
+    height: 2px;
+    margin: 30px auto;
+    width: 80%;
+    opacity: 0.7;
+}
+
+section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #689f38;
+    border-bottom: 2px dotted #c8e6c9; /* Línea punteada diferente verde */
+}
+
+ul, ol {
+    color: #555;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #008000; /* Verde para los enlaces */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #689f38; /* Verde más intenso al pasar el ratón */
+    text-decoration: underline;
+}
+
+/* Estilos específicos para la sección de prácticas */
+h2:nth-child(12) { /* Selecciona el h2 antes de "Prácticas - Portafolio" */
+    color: #558b2f; /* Un tono diferente para resaltar */
+    font-size: 2em;
+    text-align: center;
+    border-bottom: none;
+    margin-top: 40px;
+}
+
+ul:nth-child(13) { /* Selecciona la lista de "Prácticas - Portafolio" */
+    list-style: none;
+    padding: 0;
+}
+
+ul:nth-child(13) > li {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #8bc34a; /* Barra lateral verde */
+}
+
+ul:nth-child(13) > li > a:first-child { /* Estilo para el título del parcial */
+    font-weight: bold;
+    color: #689f38;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+ul:nth-child(13) > li > ol {
+    padding-left: 20px;
+}
+
+ul:nth-child(13) > li > ol > li {
+    margin-bottom: 5px;
+}
+
+/* Estilos para la sección de consideraciones y contenido */
+h2:nth-child(10), h2:nth-child(15) { /* Selecciona los h2 de estas secciones */
+    color: #558b2f;
+    border-bottom: 2px dotted #8bc34a;
+}
+
+/* Estilos para la autobiografía */
+p:nth-child(8) { /* Selecciona el párrafo de la autobiografía */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #c8e6c9;
+}

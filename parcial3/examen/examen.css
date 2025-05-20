@@ -1,0 +1,133 @@
+body{
+    background-image: url("ternurines.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+    width: 80%;
+    max-width: 600px;
+}
+
+h1, h2 {
+    font-family: "Single Day", cursive;
+    text-align: center;
+    color: #f48fb1;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 0 #fce4ec;
+}
+
+.input-area {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#nueva-tarea {
+    flex-grow: 1;
+    padding: 12px; /* Un poco más de espacio */
+    border: 2px solid #f48fb1;
+    border-radius: 8px 0 0 8px; /* Bordes redondeados en la izquierda */
+    font-size: 16px;
+    font-family: sans-serif; /* Una fuente legible */
+    outline:none;
+}
+
+#agregar-tarea {
+    background-color: #f48fb1; /* Botón rosa */
+    color: white;
+    border: none;
+    padding: 12px 18px; /* Más espacio en el botón */
+    border-radius: 0 8px 8px 0; /* Bordes redondeados en la derecha */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold; /* Un poco de énfasis */
+}
+
+#agregar-tarea:hover {
+    background-color: #f06292; /* Tono de rosa más oscuro al pasar el ratón */
+}
+
+#lista-tareas {
+    margin-bottom: 20px;
+}
+
+#lista-tareas h2 {
+    color: #f06292; /* Tono de rosa más oscuro para el subtítulo */
+    font-size: 1.5em; /* Un poco más grande */
+    margin-bottom: 10px;
+}
+
+#tareas {
+    list-style-type: none;
+    padding: 0;
+}
+
+#tareas li {
+    display: flex;
+    align-items: center;
+    padding: 12px 0; /* Más espacio vertical */
+    border-bottom: 1px dashed #fce4ec; /* Borde punteado suave */
+}
+
+#tareas li:last-child {
+    border-bottom: none;
+}
+
+#tareas li span {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #555; /* Color de texto más suave */
+}
+
+#tareas li input[type="checkbox"] {
+    margin-right: 15px;
+    transform: scale(1.2); /* Checkbox un poco más grande */
+}
+
+#eliminar-completadas {
+    background-color: #e57373; /* Rojo suave para eliminar */
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    margin-top: 20px; /* Espacio superior */
+}
+
+#eliminar-completadas:hover {
+    background-color: #d32f2f; /* Rojo más oscuro al pasar el ratón */
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999; /* Color más claro para tareas completadas */
+}
+
+/* Estilo para los botones "Listuki" */
+.eliminar-tarea {
+    background-color: #fff; /* Fondo blanco */
+    color: #f48fb1; /* Texto rosa */
+    border: 2px solid #f48fb1; /* Borde rosa */
+    border-radius: 20px; /* Bordes muy redondeados */
+    padding: 8px 15px; /* Ajusta el espacio dentro del botón */
+    cursor: pointer;
+    font-size: 14px; /* Tamaño de la fuente */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave al pasar el ratón */
+    margin-left: 10px; /* Espacio entre el texto de la tarea y el botón */
+}
+
+.eliminar-tarea:hover {
+    background-color: #f48fb1; /* Fondo rosa al pasar el ratón */
+    color: white; /* Texto blanco al pasar el ratón */
+}
